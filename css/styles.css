@@ -2,3 +2,18 @@
 body {
   background-image: url(/images/background/concrete_wall.png);
 }
+
+.logo {
+  width: 300px;
+}
+
+header {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  width: 100%;
+}
