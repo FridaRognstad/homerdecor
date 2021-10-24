@@ -5,6 +5,10 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .logo {
   width: 300px;
 }
@@ -32,7 +36,6 @@ nav ul {
 }
 
 nav a {
-  text-decoration: none;
   color: #fff;
   text-transform: uppercase;
   font-size: 13px;
@@ -54,16 +57,19 @@ nav a:hover {
   align-items: center;
 }
 
-.btn {
-  border: solid 1px #8a6e15;
+.headings-home .btn {
+  border: solid 2px #8a6e15;
   color: #8a6e15;
-  padding: 5px;
+  padding: 10px;
   text-transform: uppercase;
-  text-decoration: none;
+  width: 300px;
+  text-align: center;
+  font-weight: 600;
 }
 
 h1 {
   color: #fff;
+  font-weight: 400;
 }
 
 h2 {
@@ -84,13 +90,47 @@ h2 {
   margin: 40px auto;
 }
 
+.catogory-card {
+  position: relative;
+}
+
 .catogory-card img {
   width: 400px;
 }
 
+.hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #030b3d;
+  transition: 0.4s ease;
+}
+
+.catogory-card h3 {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  font-size: 60px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.catogory-card:hover .hover {
+  opacity: 0.5;
+}
+
+.catogory-card:hover h3 {
+  z-index: 2;
+  opacity: 1;
+}
+
 .article {
   width: 90%;
-  margin: auto;
+  margin: 20px auto;
   display: flex;
 }
 
@@ -108,6 +148,42 @@ h2 {
   margin-top: 100px;
 }
 
+.article.two .article-text {
+  margin-left: 20px;
+}
+
 .article .btn {
-  display: block;
+  font-weight: 600;
+  font-style: italic;
+  color: #121212;
+  width: 150px;
+  border-bottom: solid 2px #8a6e15;
+  margin-top: 40px;
+}
+
+.article .btn:hover {
+  width: 250px;
+  transition: 0.2s ease;
+}
+
+footer {
+  width: 100%;
+  background-color: #030b3d;
+  opacity: 0.5;
+  padding: 10px 0;
+  margin-top: 50px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 90%;
+}
+
+footer li {
+  list-style: none;
+}
+footer a {
+  color: #fff;
 }
