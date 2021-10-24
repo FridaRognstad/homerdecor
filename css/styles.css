@@ -33,6 +33,7 @@ nav ul {
   display: flex;
   list-style: none;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -46,7 +47,6 @@ nav a:hover {
 }
 
 .headings-home {
-  /*Bilde av Rachel Claire fra Pexels*/
   background-image: url(/images/pexels-rachel-claire-4577179.jpg);
   background-size: cover;
   height: 750px;
@@ -88,6 +88,7 @@ h2 {
   justify-content: space-between;
   width: 90%;
   margin: 40px auto;
+  flex-wrap: wrap;
 }
 
 .catogory-card {
@@ -95,7 +96,7 @@ h2 {
 }
 
 .catogory-card img {
-  width: 400px;
+  width: 100%;
 }
 
 .hover {
@@ -114,7 +115,7 @@ h2 {
   position: absolute;
   bottom: 0;
   left: 40px;
-  font-size: 60px;
+  font-size: 30px;
   font-weight: 400;
   opacity: 0.9;
 }
@@ -132,6 +133,7 @@ h2 {
   width: 90%;
   margin: 20px auto;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .article.one {
@@ -139,7 +141,7 @@ h2 {
 }
 
 .article img {
-  max-width: 450px;
+  max-width: 100%;
 }
 
 .article-text {
@@ -186,4 +188,42 @@ footer li {
 }
 footer a {
   color: #fff;
+}
+
+@media only screen and (min-width: 600px) {
+  .catogory-card img {
+    width: 200px;
+  }
+
+  .article img {
+    max-width: 200px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .catogory-card img {
+    width: 300px;
+  }
+
+  .article img {
+    max-width: 300px;
+  }
+
+  .article {
+    flex-wrap: nowrap;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .catogory-card img {
+    width: 400px;
+  }
+
+  .catogory-card h3 {
+    font-size: 60px;
+  }
+
+  .article img {
+    max-width: 450px;
+  }
 }
