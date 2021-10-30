@@ -1,8 +1,11 @@
-/* Background pattern from Toptal Subtle Patterns */
 body {
-  background-image: url(/images/background/concrete_wall_2.png);
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+}
+
+/* Background pattern from Toptal Subtle Patterns */
+#index-body {
+  background-image: url(/images/background/concrete_wall_2.png);
 }
 
 a {
@@ -13,10 +16,14 @@ a {
   width: 300px;
 }
 
+.logo-small {
+  width: 200px;
+  margin-left: 30px;
+}
+
 header {
   display: flex;
   align-items: center;
-  width: 90%;
   margin: auto;
   height: 70px;
 }
@@ -46,6 +53,17 @@ nav a:hover {
   font-weight: 600;
 }
 
+nav .icon-section {
+  display: flex;
+  width: 200px;
+  justify-content: end;
+}
+
+nav .icon {
+  height: 20px;
+  padding: 5px;
+}
+
 .headings-home {
   background-image: url(/images/pexels-rachel-claire-4577179.jpg);
   background-size: cover;
@@ -70,17 +88,6 @@ nav a:hover {
 h1 {
   color: #fff;
   font-weight: 400;
-}
-
-h2 {
-  background-color: #121212;
-  margin-top: 0;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 400;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
 }
 
 .categories {
@@ -190,6 +197,78 @@ footer a {
   color: #fff;
 }
 
+.products-heading {
+  background-image: url(/images/products-header.jpg);
+  background-size: cover;
+  filter: drop-shadow(0px 0px 10px 0px);
+  height: 650px;
+  margin-top: -100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.products-heading h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+#products-body h2 {
+  text-align: center;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.products-card {
+  width: 90%;
+  padding: 20px;
+  padding-top: 0;
+}
+
+.products-card h3 {
+  margin-top: 0;
+  color: #121212;
+}
+
+.products-card p {
+  color: #121212;
+  opacity: 0.8;
+}
+
+.products-card img {
+  width: 100%;
+}
+
+.products-card .btn {
+  border-bottom: #8a6e15 solid 2px;
+  display: inline-block;
+  width: 30%;
+  color: #121212;
+}
+
+.products-card .btn:hover {
+  width: 60%;
+  font-weight: 600;
+  transition: 0.9s ease;
+}
+
+.underline {
+  width: 70%;
+  background-color: #030b3d;
+  height: 1.5px;
+  display: block;
+  opacity: 0.3;
+  margin: auto;
+  margin-top: 70px;
+}
+
 @media only screen and (min-width: 600px) {
   .catogory-card img {
     width: 200px;
@@ -197,6 +276,11 @@ footer a {
 
   .article img {
     max-width: 200px;
+  }
+
+  .products-card {
+    width: 350px;
+    margin: auto;
   }
 }
 
@@ -212,6 +296,14 @@ footer a {
   .article {
     flex-wrap: nowrap;
   }
+
+  .products-container {
+    flex-direction: row;
+  }
+
+  .products-card {
+    width: 200px;
+  }
 }
 
 @media only screen and (min-width: 1300px) {
@@ -225,5 +317,9 @@ footer a {
 
   .article img {
     max-width: 450px;
+  }
+
+  .products-card {
+    width: 300px;
   }
 }
