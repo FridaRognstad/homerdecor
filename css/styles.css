@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
@@ -12,13 +12,64 @@ a {
   text-decoration: none;
 }
 
+nav a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+nav a:hover {
+  font-weight: 600;
+}
+
+h1,
+nav a,
+footer a {
+  font-family: "Montserrat", sans-serif;
+  opacity: 0.9;
+}
+
+h1 {
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+h2,
+a {
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
+}
+
+p,
+h3,
+h4 {
+  font-family: "Judson", serif;
+}
+
+h3 {
+  font-size: 21px;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.btn {
+  font-size: 18px;
+}
+
 .logo {
   width: 300px;
+  opacity: 0.9;
 }
 
 .logo-small {
   width: 200px;
   margin-left: 30px;
+  opacity: 0.9;
 }
 
 header {
@@ -36,6 +87,7 @@ nav {
 
 nav .active {
   color: #d6b135;
+  opacity: 1;
 }
 
 nav ul {
@@ -44,16 +96,6 @@ nav ul {
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
-}
-
-nav a {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 13px;
-}
-
-nav a:hover {
-  font-weight: 600;
 }
 
 nav .icon-section {
@@ -79,18 +121,13 @@ nav .icon {
 }
 
 .headings-home .btn {
-  border: solid 2px #8a6e15;
-  color: #8a6e15;
-  padding: 10px;
+  border: solid 2px #d6b135;
+  color: #d6b135;
   text-transform: uppercase;
   width: 300px;
   text-align: center;
   font-weight: 600;
-}
-
-h1 {
-  color: #fff;
-  font-weight: 400;
+  padding: 8px;
 }
 
 .categories {
@@ -120,13 +157,13 @@ h1 {
   transition: 0.4s ease;
 }
 
-.catogory-card h3 {
+.catogory-card h2 {
   color: #fff;
   position: absolute;
   bottom: 0;
   left: 40px;
-  font-size: 30px;
-  font-weight: 400;
+  font-size: 50px;
+  font-weight: 600;
   opacity: 0.9;
 }
 
@@ -134,7 +171,7 @@ h1 {
   opacity: 0.5;
 }
 
-.catogory-card:hover h3 {
+.catogory-card:hover h2 {
   z-index: 2;
   opacity: 1;
 }
@@ -166,7 +203,6 @@ h1 {
 
 .article .btn {
   font-weight: 600;
-  font-style: italic;
   color: #121212;
   width: 150px;
   border-bottom: solid 2px #8a6e15;
@@ -180,8 +216,7 @@ h1 {
 
 footer {
   width: 100%;
-  background-color: #030b3d;
-  opacity: 0.5;
+  background-color: #121212;
   padding: 10px 0;
   margin-top: 50px;
 }
@@ -198,6 +233,7 @@ footer li {
 }
 footer a {
   color: #fff;
+  text-transform: uppercase;
 }
 
 .products-heading {
@@ -212,12 +248,15 @@ footer a {
 }
 
 .products-heading h1 {
-  font-size: 40px;
   text-transform: uppercase;
+  font-size: 50px;
 }
 
 #products-body h2 {
   text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 .products-container {
