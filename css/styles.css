@@ -33,7 +33,9 @@ h1 {
   color: #fff;
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 22px;
+  margin: 10px;
+  text-align: center;
 }
 
 h2,
@@ -62,8 +64,7 @@ p {
 }
 
 .logo {
-  width: 300px;
-  opacity: 0.9;
+  width: 240px;
 }
 
 .logo-small {
@@ -100,8 +101,6 @@ nav ul {
 
 nav .icon-section {
   display: flex;
-  width: 200px;
-  justify-content: end;
 }
 
 nav .icon {
@@ -124,7 +123,7 @@ nav .icon {
   border: solid 2px #d6b135;
   color: #d6b135;
   text-transform: uppercase;
-  width: 300px;
+  width: 270px;
   text-align: center;
   font-weight: 600;
   padding: 8px;
@@ -132,10 +131,12 @@ nav .icon {
 
 .categories {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 90%;
   margin: 40px auto;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .catogory-card {
@@ -161,8 +162,8 @@ nav .icon {
   color: #fff;
   position: absolute;
   bottom: 0;
-  left: 40px;
-  font-size: 50px;
+  left: 5px;
+  font-size: 46px;
   font-weight: 600;
   opacity: 0.9;
 }
@@ -194,7 +195,6 @@ nav .icon {
 .article-text {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
 }
 
 .article.two .article-text {
@@ -206,7 +206,6 @@ nav .icon {
   color: #121212;
   width: 150px;
   border-bottom: solid 2px #8a6e15;
-  margin-top: 40px;
 }
 
 .article .btn:hover {
@@ -243,8 +242,9 @@ footer a {
   height: 650px;
   margin-top: -100px;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .products-heading h1 {
@@ -312,8 +312,21 @@ footer a {
 }
 
 @media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .logo {
+    width: 300px;
+  }
+
+  .headings-home .btn {
+    width: 300px;
+    margin-bottom: 45px;
+  }
+
   .catogory-card img {
-    width: 200px;
+    width: 282px;
   }
 
   .article img {
@@ -327,8 +340,12 @@ footer a {
 }
 
 @media only screen and (min-width: 900px) {
+  .categories {
+    flex-direction: row;
+  }
+
   .catogory-card img {
-    width: 300px;
+    width: 270px;
   }
 
   .article img {
@@ -339,18 +356,26 @@ footer a {
     flex-wrap: nowrap;
   }
 
+  .article-text {
+    margin-top: 100px;
+  }
+
+  .article .btn {
+    margin-top: 40px;
+  }
+
   .products-container {
     flex-direction: row;
   }
 
   .products-card {
-    width: 200px;
+    width: 220px;
   }
 }
 
 @media only screen and (min-width: 1300px) {
   .catogory-card img {
-    width: 400px;
+    width: 389px;
   }
 
   .catogory-card h3 {
